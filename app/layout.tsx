@@ -30,10 +30,9 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
         >
-          Login
-          {children}
+          <main className="flex-1">{children}</main>
           <FooterUnauth />
         </body>
       </html>
@@ -42,10 +41,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        Not logged in
-        {children}
+        <main className="flex-1">
+          Not logged in
+          {children}
+        </main>
         <FooterAuth />
       </body>
     </html>
