@@ -9,7 +9,7 @@ const LoginClient = () => {
   const [password, setPassword] = React.useState("");
   return (
     <>
-      <div className="flex justify-center items-center flex-col">
+      <div className="flex justify-center items-center flex-col p-4">
         <div className="pt-11">
           <Image src="/images/Icon.png" alt="logo" width={100} height={100} />
         </div>
